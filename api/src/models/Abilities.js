@@ -4,8 +4,12 @@ module.exports = (sequelize) => {
     sequelize.define('abilities', {
         id:{
           type: DataTypes.INTEGER,
-          // autoIncrement: true,
+          autoIncrement: true,
           primaryKey: true
+        },
+        side:{
+          type: DataTypes.STRING,
+          allowNull: false
         },
         technology: {
           type: DataTypes.TEXT,
@@ -15,5 +19,8 @@ module.exports = (sequelize) => {
           type: DataTypes.TEXT,
           allowNull: false,
         }
+    },
+    {
+      timestamps: false
     })
 }

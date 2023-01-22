@@ -4,7 +4,7 @@ module.exports = (sequelize) => {
     sequelize.define('work', {
         id:{
           type: DataTypes.INTEGER,
-          // autoIncrement: true,
+          autoIncrement: true,
           primaryKey: true
         },
         name: {
@@ -18,6 +18,12 @@ module.exports = (sequelize) => {
         text: {
           type: DataTypes.TEXT,
           allowNull: false
+        },
+        url: {
+          type: DataTypes.TEXT,
+          allowNull: false
         }
+    },{
+      timestamps: false
     })
 }

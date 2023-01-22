@@ -4,7 +4,7 @@ module.exports = (sequelize) => {
     sequelize.define('profile', {
         id:{
           type: DataTypes.INTEGER,
-          // autoIncrement: true,
+          autoIncrement: true,
           primaryKey: true
         },
         name: {
@@ -20,6 +20,17 @@ module.exports = (sequelize) => {
           type: DataTypes.TEXT,
           allowNull: false,
           defaultValue: 'Bogota D.C Colombia'
+        },
+        email: {
+          type: DataTypes.TEXT,
+          allowNull: false,
+          defaultValue: 'moises.platadev@gmail.com'
+        },
+        title: {
+          type: DataTypes.STRING,
+          allowNull: false,
         }
+    },{
+      timestamps: false
     })
 }

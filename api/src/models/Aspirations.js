@@ -4,7 +4,7 @@ module.exports = (sequelize) => {
     sequelize.define('aspirations', {
         id:{
           type: DataTypes.INTEGER,
-          // autoIncrement: true,
+          autoIncrement: true,
           primaryKey: true
         },
         what: {
@@ -19,5 +19,7 @@ module.exports = (sequelize) => {
           type: DataTypes.TEXT,
           allowNull: false
         }
+    },{
+      timestamps: false
     })
 }

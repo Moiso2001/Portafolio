@@ -4,20 +4,18 @@ module.exports = (sequelize) => {
     sequelize.define('link', {
         id:{
           type: DataTypes.INTEGER,
-          // autoIncrement: true,
+          autoIncrement: true,
           primaryKey: true
         },
-        where: {
+        url: {
           type: DataTypes.TEXT,
           allowNull: false
         },
-        since: {
+        what: {
           type: DataTypes.TEXT,
           allowNull: false,
-        },
-        text: {
-          type: DataTypes.TEXT,
-          allowNull: false
         }
+    },{
+      timestamps: false
     })
 }
