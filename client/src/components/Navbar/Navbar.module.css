@@ -1,0 +1,61 @@
+:root{
+    --main-bg-color: #e892e9;
+    --main-snd-color: #160319;
+}
+
+.divGlobal{
+    color: var(--main-bg-color);
+    background-color: var(--main-snd-color);
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.divLogo{
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    font-size: 40px;
+}
+
+.byme{
+    display: flex;
+    margin: 20px 0px 0px 10px;
+}
+
+.divButtons{
+    display: flex;
+    margin: 0px 40px 0px 0px;
+    padding: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.span{
+    display: flex;
+    margin: 0px 20px 0px 20px;
+    transition-property: color;
+    transition-duration: 250ms;
+}
+
+.span:hover{
+    color: rgb(220, 220, 220);
+}
+
+.contact{
+    display: flex;
+    margin-left: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: #3a1d3f;
+    border: 1px solid rgb(184, 184, 184);
+    transition-property: background-color, color;
+    transition-duration: 200ms;
+}
+
+.contact:hover{
+    background-color: rgb(184, 184, 184);
+    color: #df3be1;
+}
