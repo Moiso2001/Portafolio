@@ -1,0 +1,66 @@
+:root{
+    --main-bg-color: #e892e9;
+    --main-snd-color: #160319;
+}
+
+.divGlobal{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: rgb(22,3,25);
+    background: linear-gradient(180deg, rgba(22,3,25,1) 0%, rgba(232,146,233,1) 100%);
+}
+
+.divFullWindow{
+    background-color: var(--main-snd-color);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80em;
+    height: max-content;
+    min-height: 40vh;
+}
+
+.divInput{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.divDomain{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    padding: 15px;
+}
+
+.domain{
+    font-size: 22px;
+}
+
+.divRoutes{
+    background-color: var(--main-snd-color);
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+}
+
+.routes{
+    color: var(--main-bg-color);
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    background-color: #160319;
+    font-size: 22px;
+}
+
+.routes::placeholder{
+    color: var(--main-bg-color); 
+}
+
+.divOutput{
+    color: #fcdcfd;
+    margin: 20px;
+}
+
+.output{
+    font-weight: 100;
+}
