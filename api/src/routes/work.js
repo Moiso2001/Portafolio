@@ -6,7 +6,7 @@ const router = Router();
 
 router.get('/', async (req,res) => {
     try {
-        const work = await Work.findAll({include: Abilities});
+        const work = await Work.findAll();
 
         work.length > 0 
         ? res.status(200).json(work)

@@ -17,8 +17,6 @@ router.get('/', (req, res) => {
 });
 
 router.get('*', (req,res) => {
-    res.send({msg: "Please type an available route", routes: [{
-        about: ['me', 'love', 'abilities', 'aspirations']
-    }, 'work', 'experience', 'links']})
+    res.send([{msg: "Please type an available route", routes: 'work'}])
 })
 module.exports = router;
