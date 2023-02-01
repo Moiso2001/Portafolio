@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from "./Body.module.css";
 
-export default function Body() {
+export default function Body({handle}) {
   return (
     <div className={styles.divGlobal}>
       <div className={styles.divFirst}>
@@ -17,7 +17,7 @@ export default function Body() {
       <div className={styles.divFourth}>
         <span className={styles.fourth}>I'm a Full Stack developer with experience on backend and frontend, working with different frameworks and new technologies. Currently I'm focused on building innovation and accessible technologies for everyone</span> 
       </div>
-      <div className={styles.divFifth}>
+      <div onClick={() => handle()} className={styles.divFifth}>
         <span className={styles.fifth}>portafolio API</span>
       </div>
     </div>

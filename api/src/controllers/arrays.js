@@ -73,7 +73,7 @@ module.exports={
         age: 21,
         location: 'Bogota D.C Colombia',
         email: 'moises.platadev@gmail.com',
-        title: 'Software Developer'
+        title: 'Full Stack Developer'
     },
     love: [
         {
@@ -104,8 +104,8 @@ module.exports={
         {
             name: "PokeAPI",
             status: 'finished',
-            text: " Pokedex, My Individual Project in SoyHenry as Software Developer in Javascript. This project was made with the API PokeAPI and an own database with #postgresql. It has the purpose to be a Pokedex and to create your own pokemons :)) You can filter by different parameters or search by National ID, and Pokemon Names created by the comunity or original ones. ",
-            url: " https://poke-app-front-pied.vercel.app/home "
+            text: " Pokedex, My Individual Project in SoyHenry as Full Stack Developer in Javascript. This project was made with the API PokeAPI and an own database with PostgreSQL. It has the purpose to be a Pokedex and to create your own pokemons :)) You can filter by different parameters or search by National ID, and Pokemon Names created by the comunity or original ones. ",
+            url: "https://poke-app-front-pied.vercel.app/home"
         },
         {
             name: "HenryGadget",
@@ -116,13 +116,13 @@ module.exports={
         {
             name: "MovieAPP",
             status: 'finished',
-            text: "One of the first apps created with React and Redux, implementing an external API",
+            text: "One of my first apps created with React and Redux, implementing an external API",
             url: "https://movie-app-zeta-six.vercel.app/"
         },
         {
             name: "BogoTRIP",
             status: "being made",
-            text: "A tourist application about the Bogota city, this website/app will generate you plans to do on Bogota, this could include, Bar, Dancing, Go to eat, everything that you can imagine",
+            text: "A tourist application about Bogota city, this website/app will generate you plans to do on Bogota, this could include, Bar, Dancing, Restaurants, and everything that you can imagine",
             url: 'not available yet'
         },
         {

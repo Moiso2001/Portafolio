@@ -1,6 +1,7 @@
 import React from 'react';
 import Child from './Child';
 
+import styles from "./Father.module.css"
 
 export default function Father({object}) {
 
@@ -14,8 +15,10 @@ export default function Father({object}) {
   // let id = 0
   return (
     <>
-      <div>
-        {result.map((e) => <Child x={e[0]} y={e[1]}/>)}
+      <div className={styles.divGlobal}>
+        {`{`}
+        {result.map((e) => <Child prop1={e[0]} prop2={e[1]}/>)}
+        {`},`}
       </div>
     </>
   )

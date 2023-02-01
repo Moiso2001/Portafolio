@@ -1,23 +1,8 @@
-import { UPDATE_RESPONSE } from "./actions";
+import { UPDATE_RESPONSE, UPDATE_SEARCH } from "./actions";
 
 const initialState = {
-    response: 
-    `{
-      "msg": "Please type an available route",
-      "routes": [
-          {
-              "about": [
-                  "me",
-                  "love",
-                  "abilities",
-                  "aspirations"
-              ]
-          },
-          "work",
-          "experience",
-          "links"
-      ]
-    }`
+    response: [],
+    search: ''
 }
 
 const rootReducer = (state = initialState, {type, payload}) => {
@@ -25,7 +10,8 @@ const rootReducer = (state = initialState, {type, payload}) => {
         case UPDATE_RESPONSE:
             return{
                 ...state,
-                response: payload
+                response: payload.response,
+                search: payload.search
             }
         default:
             return{

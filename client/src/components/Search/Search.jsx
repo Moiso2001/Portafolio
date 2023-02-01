@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
 import styles from "./Search.module.css";
@@ -9,11 +9,12 @@ import {AiOutlineArrowRight} from "react-icons/ai";
 import { setResponse } from '../../redux/actions';
 
 import Father from './Father';
+import { forwardRef } from 'react';
 
-export default function Search() {
+function Search({reference}) {
 
-  const [input, setInput] = useState('');
   const response = useSelector(state => state.response);
+  const search = useSelector(state => state.search);
 
   const dispatch = useDispatch();
 
@@ -23,18 +24,17 @@ export default function Search() {
   
 
   const handleOnChange = (e) => {
-    setInput(e.target.value)
+    dispatch(setResponse(e.target.value))
   }
 
   const handleOnSubmit = (e) => {
     e.preventDefault()
-    dispatch(setResponse(input))
-    setInput('')
+    dispatch(setResponse(search))
   }
 
   if(Array.isArray(response)){
     return (
-      <div className={styles.divGlobal}>
+      <div ref={reference} className={styles.divGlobal}>
         <div className={styles.divHead}>
           <div className={styles.divButtons}>
             <div className={styles.close}></div>
@@ -54,8 +54,8 @@ export default function Search() {
                   onChange={handleOnChange} 
                   className={styles.routes} 
                   name='route' 
-                  placeholder='home'
-                  value={input}
+                  placeholder={search}
+                  value={search}
                 />
               </div>
               <div className={styles.divArrow}>
@@ -77,3 +77,6 @@ export default function Search() {
     </div>
   }
 }
+
+
+export default forwardRef(Search);
