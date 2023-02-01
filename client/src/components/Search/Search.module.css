@@ -1,0 +1,129 @@
+:root{
+    --main-bg-color: #e892e9;
+    --main-snd-color: #160319;
+}
+
+.divGlobal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    background: rgb(22,3,25);
+    background: linear-gradient(180deg, rgba(22,3,25,1) 0%, rgba(232,146,233,1) 100%);
+}
+
+.divFullWindow{
+    background-color: var(--main-snd-color);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80em;
+    height: max-content;
+    min-height: 80vh; 
+}
+
+.divInput{
+    display: grid;
+    grid-template-columns: 48% 48% 4%;
+}
+
+.divDomain{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    padding: 15px;
+}
+
+.domain{
+    font-size: 22px;
+}
+
+.divRoutes{
+    background-color: var(--main-snd-color);
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+}
+
+.slash{
+    color: var(--main-bg-color);
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.routes{
+    color: var(--main-bg-color);
+    margin-left: 0px;
+    border: none;
+    outline: none;
+    background-color: #160319;
+    font-size: 22px;
+}
+
+.routes::placeholder{
+    color: var(--main-bg-color); 
+}
+
+.divArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{
+    color: var(--main-bg-color);
+    font-size: 30px;
+}
+
+.arrow:hover{
+    font-size: 35px;
+}
+
+.divOutput{
+    color: #fcdcfd;
+    margin: 20px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+/* .output{
+} */
+
+.divHead{
+    display: flex;
+    width: 80em;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #D3D3D3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: left;
+}
+
+.divButtons{
+    display: flex;
+    margin: 5px 0px 0px 7px;
+    background-color: pink;
+    width: 50px;
+    justify-content: space-between;
+}
+
+.close{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(254, 67, 67);
+    border-radius: 100%;
+}
+
+.minimize{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(253, 208, 31);
+    border-radius: 100%;
+}
+
+.maximize{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(21, 225, 27);
+    border-radius: 100%;
+}
