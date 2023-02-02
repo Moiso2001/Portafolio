@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Body from './components/Body/Body';
+import Navbar from './components/Navbar/Navbar';
+import Search from './components/Search/Search';
+import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
+import { useRef } from 'react';
+
 function App() {
+
+  const ref = useRef(null);
+
+  const refContact = useRef(null);
+
+  const handleScroll = () => {
+      ref.current?.scrollIntoView({behavior: 'smooth'});
+  }
+
+  const handleContactScroll = () => {
+    refContact.current?.scrollIntoView({behavior: 'smooth'});
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar handle={handleScroll} secondHandle={handleContactScroll}/>
+      <Body handle={handleScroll}/>
+      <Search reference={ref}/>
+      <Contact reference={refContact}/>
+      <Footer/>
     </div>
   );
 }

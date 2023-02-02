@@ -1,0 +1,40 @@
+:root{
+    --main-bg-color: #e892e9;
+    --main-snd-color: #160319;
+}
+
+.divGlobal{
+    background-color: var(--main-snd-color);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divLogo{
+    color: #e892e9;
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divLogo span{
+    margin-left: 5px;
+}
+
+.divIcons{
+    color: var(--main-bg-color);
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin-left: 80px;
+}
+
+.divLegal{
+    color: var(--main-bg-color);
+    margin-right: 20px;
+    font-size: 12px;
+}
