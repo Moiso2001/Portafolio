@@ -1,0 +1,99 @@
+:root{
+    --main-bg-color: #e892e9;
+    --main-snd-color: #160319;
+}
+
+.divGlobal{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    height: 125vh;
+}
+
+.divTitle{
+    color: #2d0833;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.title{
+    font-weight: 500;
+}
+
+.divBody{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.divLogo{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+}
+
+.span{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.divSocial{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 120px;
+}
+
+a{
+    color: var(--main-snd-color);
+}
+
+.divForm form{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+}
+
+.divForm input{
+    width: 50%;
+}
+
+.inpTopic{
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+.inpEmail{
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.inpMessage{
+    height: 200px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    width: 609px;
+}
+
+.divForm button{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    width: 100px;
+    transition-property: width;
+    transition-duration: 500ms;
+}
+
+.divForm button:hover{
+    width: 260px;
+}

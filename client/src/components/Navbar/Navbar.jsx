@@ -6,7 +6,7 @@ import styles from "./Navbar.module.css";
 import {BsFillHeartFill} from "react-icons/bs";
 import { setResponse } from '../../redux/actions';
 
-export default function Navbar({handle}) {
+export default function Navbar({handle, secondHandle}) {
 
   const dispatch = useDispatch();
 
@@ -25,8 +25,9 @@ export default function Navbar({handle}) {
         <span onClick={() => {handleOnClick('experience'); handle()}} className={styles.span}>experience</span>
         <span onClick={() => {handleOnClick('work'); handle()}} className={styles.span}>work</span>
         <span onClick={() => {handleOnClick('links'); handle()}} className={styles.span}>links</span>
-        <span onClick={() => {}} className={styles.contact}>contact</span>
+        <span onClick={() => {secondHandle()}} className={styles.contact}>contact</span>
       </div>
     </div>
   )
 }
+

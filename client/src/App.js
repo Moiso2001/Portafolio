@@ -11,16 +11,22 @@ function App() {
 
   const ref = useRef(null);
 
+  const refContact = useRef(null);
+
   const handleScroll = () => {
       ref.current?.scrollIntoView({behavior: 'smooth'});
   }
 
+  const handleContactScroll = () => {
+    refContact.current?.scrollIntoView({behavior: 'smooth'});
+  }
+
   return (
     <div className="App">
-      <Navbar handle={handleScroll}/>
+      <Navbar handle={handleScroll} secondHandle={handleContactScroll}/>
       <Body handle={handleScroll}/>
       <Search reference={ref}/>
-      <Contact/>
+      <Contact reference={refContact}/>
       <Footer/>
     </div>
   );

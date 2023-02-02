@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react';
+import { useEffect, forwardRef } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
 import styles from "./Search.module.css";
@@ -9,7 +9,6 @@ import {AiOutlineArrowRight} from "react-icons/ai";
 import { setResponse } from '../../redux/actions';
 
 import Father from './Father';
-import { forwardRef } from 'react';
 
 function Search({reference}) {
 
