@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useEffect, forwardRef } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
@@ -12,6 +12,8 @@ import Father from './Father';
 
 function Search({reference}) {
 
+  const [input, setInput] = useState('')
+
   const response = useSelector(state => state.response);
   const search = useSelector(state => state.search);
 
@@ -23,6 +25,7 @@ function Search({reference}) {
   
 
   const handleOnChange = (e) => {
+    setInput(e.target.value)
     dispatch(setResponse(e.target.value))
   }
 
@@ -53,8 +56,8 @@ function Search({reference}) {
                   onChange={handleOnChange} 
                   className={styles.routes} 
                   name='route' 
-                  placeholder={search}
-                  value={search}
+                  placeholder={input}
+                  value={input}
                 />
               </div>
               <div className={styles.divArrow}>
