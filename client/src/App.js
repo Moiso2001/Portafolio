@@ -1,16 +1,16 @@
-import './App.css';
-
-import Body from './components/Body/Body';
+import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import Search from './components/Search/Search';
 import Footer from './components/Footer/Footer';
-import Contact from './components/Contact/Contact';
+import Body from './components/Body/Body';
+
 import { useRef } from 'react';
+
+import './App.css';
 
 function App() {
 
   const ref = useRef(null);
-
   const refContact = useRef(null);
 
   const handleScroll = () => {

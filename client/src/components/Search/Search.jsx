@@ -6,7 +6,7 @@ import styles from "./Search.module.css";
 
 import {AiOutlineArrowRight} from "react-icons/ai";
 
-import { setResponse } from '../../redux/actions';
+import { setResponse , getAll} from '../../redux/actions';
 
 import Father from './Father';
 
@@ -14,15 +14,11 @@ function Search({reference}) {
 
   const [input, setInput] = useState('')
 
-  const response = useSelector(state => state.response);
+  const response = useSelector(state => state.body);
   const search = useSelector(state => state.search);
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(setResponse('home'))
-  }, [])
-  
 
   const handleOnChange = (e) => {
     setInput(e.target.value)
