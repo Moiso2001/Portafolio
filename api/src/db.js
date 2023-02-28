@@ -3,20 +3,25 @@ const { Sequelize, Op } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 
-const {DB_USER, DB_PASSWORD, DB_HOST, DB_NAME} = process.env;
+const {DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_DEPLOY} = process.env;
 
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:5042/${DB_NAME}`, {
-    logging: false, // set to console.log to see the raw SQL queries
-    native: false, // lets Sequelize know we can use pg-native for ~30% more speed
-    // Para DB deploy. Suelen pedir conexión ssl.
-    // dialectOptions: {
-    //   ssl: true
-    // },
-    define: {
-    freezeTableName: true // Para que no le cambie el nombre a todas las tablas
-  }
-})
+// const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:5042/${DB_NAME}`, {
+//     logging: false, // set to console.log to see the raw SQL queries
+//     native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+//     // Para DB deploy. Suelen pedir conexión ssl.
+//     // dialectOptions: {
+//     //   ssl: true
+//     // },
+//     define: {
+//     freezeTableName: true // Para que no le cambie el nombre a todas las tablas
+//   }
+// })
+
+const sequelize = new Sequelize(DB_DEPLOY, {
+  logging: false, // set to console.log to see the raw SQL queries
+  native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+});
 
 const basename = path.basename(__filename);
 

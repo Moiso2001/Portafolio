@@ -1,8 +1,17 @@
-import React from 'react'
+import { getAll } from '../../redux/actions';
+import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react'
 
 import styles from "./Body.module.css";
 
 export default function Body({handle}) {
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getAll())
+  })
+
   return (
     <div className={styles.divGlobal}>
       <div className={styles.divFirst}>
