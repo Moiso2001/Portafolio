@@ -4,6 +4,7 @@
 }
 
 .divGlobal{
+    display: none;
     background-color: var(--main-snd-color);
     width: 100%;
     height: 15vh;
@@ -37,4 +38,10 @@
     color: var(--main-bg-color);
     margin-right: 20px;
     font-size: 12px;
+}
+
+@media screen and (max-width: 480px) { 
+    .divGlobal{
+        display: none;
+    }
 }

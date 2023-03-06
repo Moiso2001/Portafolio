@@ -4,9 +4,9 @@
 }
 
 .divGlobal{
-    display: flex;
+    display: none;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: max-content;
     background: rgb(22,3,25);
     background: linear-gradient(180deg, rgba(22,3,25,1) 0%, rgba(232,146,233,1) 100%);
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80em;
+    width: 80vw;
     height: max-content;
     min-height: 80vh; 
 }
@@ -126,4 +126,10 @@
     height: 10px;
     background-color: rgb(21, 225, 27);
     border-radius: 100%;
+}
+
+@media screen and (max-width: 480px) { 
+    .divGlobal{
+        display: none;
+    }
 }

@@ -68,3 +68,9 @@
     color: #df3be1;
 }
 
+@media screen and (max-width: 480px) { 
+    .divGlobal{
+        display: none;
+    }
+}
+

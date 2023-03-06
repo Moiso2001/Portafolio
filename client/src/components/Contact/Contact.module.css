@@ -4,7 +4,7 @@
 }
 
 .divGlobal{
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: var(--main-bg-color);
     height: 125vh;
@@ -96,4 +96,10 @@ a{
 
 .divForm button:hover{
     width: 260px;
+}
+
+@media screen and (max-width: 480px) { 
+    .divGlobal{
+        display: none;
+    }
 }
