@@ -9,16 +9,17 @@
     display: flex;
     justify-content: space-between;
     cursor: default;
+    width: 100%;
 }
 
 .divLogo{
     display: flex;
-    padding: 40px;
+    padding: 2.5em;
     align-items: center;
     justify-content: center;
 }
 .logo{
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .byme{
@@ -58,4 +59,36 @@
 .contact:hover{
     background-color: rgb(184, 184, 184);
     color: #df3be1;
+}
+
+
+@media screen and (max-width: 320px) {
+    .divGlobal{
+        justify-content: center;
+    }
+
+    .contact{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .span{
+      display: none;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .logo{
+        font-size: 3.5em;
+    }
+    .span{
+        font-size: 1.25em;
+    }
+    .byme{
+        font-size: 1.25em;
+    }
+    .contact{
+        font-size: 1.25em
+    }
 }

@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80em;
+    width: 83.3vw;
     height: max-content;
     min-height: 80vh; 
 }
@@ -30,11 +30,12 @@
 .divDomain{
     background-color: var(--main-bg-color);
     width: 100%;
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
 }
 
 .domain{
     font-size: 22px;
+    margin-left: 15px;
 }
 
 .divRoutes{
@@ -56,6 +57,7 @@
     outline: none;
     background-color: #160319;
     font-size: 22px;
+    width: 80%;
 }
 
 .routes::placeholder{
@@ -81,7 +83,7 @@
     color: #fcdcfd;
     margin: 20px;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 1.12em;
 }
 
 /* .output{
@@ -89,7 +91,7 @@
 
 .divHead{
     display: flex;
-    width: 80em;
+    width: 83.3vw;
     height: 20px;
     margin: 0 auto;
     margin-top: 100px;
@@ -126,4 +128,23 @@
     height: 10px;
     background-color: rgb(21, 225, 27);
     border-radius: 100%;
+}
+
+
+@media screen and (max-width: 350px) {
+    .divOutput{
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 746px) {
+    .divInput{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .divArrow{
+        display: none;
+    }
 }

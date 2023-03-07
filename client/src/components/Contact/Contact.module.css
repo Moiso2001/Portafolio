@@ -7,14 +7,15 @@
     display: flex;
     flex-direction: column;
     background-color: var(--main-bg-color);
-    height: 125vh;
+    height: 100%;
+    padding-bottom: 14%;
 }
 
 .divTitle{
     color: #2d0833;
     margin: 0 auto;
     margin-top: 40px;
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .title{
@@ -43,7 +44,9 @@
 .divSocial{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    margin-left: 120px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20%
 }
 
 a{
@@ -62,14 +65,14 @@ a{
 }
 
 .inpTopic{
-    height: 35px;
+    height: 10%;
     border-radius: 7px;
     border: none;
     outline: none;
 }
 
 .inpEmail{
-    height: 35px;
+    height: 10%;
     border-radius: 7px;
     border: none;
     outline: none;
@@ -77,23 +80,68 @@ a{
 }
 
 .inpMessage{
-    height: 200px;
+    height: 50%;
     border-radius: 7px;
     border: none;
     outline: none;
     margin-top: 10px;
-    width: 609px;
+    width: 50%;
 }
 
 .divForm button{
     border: none;
     outline: none;
     margin-top: 20px;
-    width: 100px;
+    width: 10%;
     transition-property: width;
     transition-duration: 500ms;
 }
 
 .divForm button:hover{
-    width: 260px;
+    width: 15%;
+}
+
+@media screen and (max-width: 450px) {
+    .divTitle{
+        font-size: 2em;
+    }
+    .divLogo{
+        width: 80px;
+        height: 80px;
+    }
+    .span{
+        font-size: 0.75em;
+    }
+    
+    .inpMessage{
+        height: 50%;
+        width: 70%;
+    }
+    .divForm button{
+        width: 30%;
+    }
+    
+    .divForm button:hover{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .divTitle{
+        font-size: 2.3em;
+    }
+    .divLogo{
+        width: 100px;
+        height: 100px;
+    }
+    .span{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .divSocial{
+        grid-template-columns: 50% 50%;
+        padding-bottom: 30%;
+    }
 }

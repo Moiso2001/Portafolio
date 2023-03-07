@@ -1,1 +1,1 @@
-export const BACKEND_URL = 'https://portafolio-back-production-1b64.up.railway.app/';
+export const BACKEND_URL = 'http://localhost:3001/';

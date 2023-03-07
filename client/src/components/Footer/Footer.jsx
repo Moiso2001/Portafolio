@@ -27,7 +27,7 @@ export default function Footer() {
         </a>
       </div>
       <div className={styles.divLegal}>
-        <span>All rights reserved for Moises David Plata 2023 ©</span>
+        <span>All rights reserved ©</span>
       </div>
     </div>
   )
