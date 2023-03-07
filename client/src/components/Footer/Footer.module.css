@@ -4,7 +4,6 @@
 }
 
 .divGlobal{
-    display: none;
     background-color: var(--main-snd-color);
     width: 100%;
     height: 15vh;
@@ -40,8 +39,8 @@
     font-size: 12px;
 }
 
-@media screen and (max-width: 480px) { 
-    .divGlobal{
+@media screen and (max-width: 780px) {
+    .divIcons{
         display: none;
     }
 }
