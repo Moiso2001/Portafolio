@@ -4,9 +4,9 @@
 }
 
 .divGlobal{
-    display: none;
+    display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: max-content;
     background: rgb(22,3,25);
     background: linear-gradient(180deg, rgba(22,3,25,1) 0%, rgba(232,146,233,1) 100%);
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80vw;
+    width: 83.3vw;
     height: max-content;
     min-height: 80vh; 
 }
@@ -30,11 +30,12 @@
 .divDomain{
     background-color: var(--main-bg-color);
     width: 100%;
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
 }
 
 .domain{
     font-size: 22px;
+    margin-left: 15px;
 }
 
 .divRoutes{
@@ -89,7 +90,7 @@
 
 .divHead{
     display: flex;
-    width: 80em;
+    width: 83.3vw;
     height: 20px;
     margin: 0 auto;
     margin-top: 100px;
@@ -128,8 +129,19 @@
     border-radius: 100%;
 }
 
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 400px) {
     .divGlobal{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 746px) {
+    .divInput{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .divArrow{
         display: none;
     }
 }
