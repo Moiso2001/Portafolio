@@ -57,6 +57,7 @@
     outline: none;
     background-color: #160319;
     font-size: 22px;
+    width: 80%;
 }
 
 .routes::placeholder{
@@ -82,7 +83,7 @@
     color: #fcdcfd;
     margin: 20px;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 1.12em;
 }
 
 /* .output{
@@ -129,10 +130,12 @@
     border-radius: 100%;
 }
 
-@media screen and (max-width: 400px) {
-    .divGlobal{
-        display: none;
+
+@media screen and (max-width: 350px) {
+    .divOutput{
+        font-size: 0.8em;
     }
+
 }
 
 @media screen and (max-width: 746px) {

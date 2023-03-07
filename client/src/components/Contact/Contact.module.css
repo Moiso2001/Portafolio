@@ -7,7 +7,8 @@
     display: none;
     flex-direction: column;
     background-color: var(--main-bg-color);
-    height: 125vh;
+    height: 100%;
+    padding-bottom: 15%;
 }
 
 .divTitle{
@@ -43,7 +44,6 @@
 .divSocial{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    margin-left: 120px;
 }
 
 a{
@@ -99,7 +99,5 @@ a{
 }
 
 @media screen and (max-width: 480px) { 
-    .divGlobal{
-        display: none;
-    }
+    
 }
